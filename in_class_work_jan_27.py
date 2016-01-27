@@ -15,4 +15,8 @@ class Pixel(Point):
         super().__init__(x, y)
         self._r = rgb[0]
         self._g = rgb[1]
-        
+        self.__b = rgb[2]
+        slef.__on = False
+
+    def __repr__(self):
+        return(self._r + ',' + self._g + ',' + self._b + 'pixel@' self.__x + ',' + self.__y)
